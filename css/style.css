@@ -306,24 +306,26 @@ nav {
     font-size: 32px;
 
 }
+
 .contact-container p {
     font-size: 20px;
     margin-bottom: 40px;
 
 }
 
-.contact-container input, .contact-container textarea{
+.contact-container input,
+.contact-container textarea {
     width: 200px;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
-    border:1px solid #ccc;
+    border: 1px solid #ccc;
     margin-left: 10px;
     margin-right: 10px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;
 }
 
-.contact-container textarea{
+.contact-container textarea {
     display: block;
     position: relative;
     margin-left: auto;
@@ -332,12 +334,12 @@ nav {
     height: 150px;
 }
 
-.contact-container input[type=submit]{
+.contact-container input[type=submit] {
     display: block;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    background-color:#2cc76a;
+    background-color: #2cc76a;
     color: white;
 
 }
@@ -346,5 +348,61 @@ footer {
     text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
-    
+
+}
+
+/*media querys */
+
+@media screen and (max-width:1100px) {
+    .plans-container {
+        width: 95%;
+    }
+
+    .plans {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .plans-container,
+    .specialties-container ul {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:576px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-items li {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .searchdomain-container, .contact-container {
+        padding: 3em 2em;
+    }
+
+    .container .searchdomain-container input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .contact-container input, .contact-container textarea{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
 }
